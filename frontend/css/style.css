@@ -1,0 +1,157 @@
+/* Your custom styles go here.
+   Use Bootstrap classes first, and write your own CSS only when you need to. */
+
+body{
+   background-color: #f5f5f5;
+   padding-top: 60px;
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+}
+
+.action-btn{
+   height: 31px;
+   padding: 0 8px;
+
+}
+
+table{
+   width: 100%;
+}
+
+#floatingAlertContainer{
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   z-index: 1055;
+   width: 300px;
+}
+
+.floating-alert{
+   opacity: 1;
+   transition: opacity 0.5s ease;
+}
+
+.floating-alert.hide{
+   opacity: 0;
+}
+
+.summaryContainer{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 10px;
+}
+
+@media (max-width: 768px){
+   .summaryContainer{
+      grid-template-columns: 1fr;
+   }
+}
+
+html{
+   overflow-y: scroll;
+}
+
+body.dark-mode{
+   background-color: #212529;
+}
+
+body.dark-mode .card{
+   background-color: #343a40;
+   color: white;
+   border-color: #6c757d;
+   
+}
+
+body.dark-mode .bg-white{
+   background-color: #343a40 !important;
+}
+
+body.dark-mode #expenseForm{
+   color: white;
+}
+
+body.dark-mode h4{
+   color: white;
+}
+
+body.dark-mode #expenseForm .form-control,
+body.dark-mode #expenseForm .form-select{
+   background-color: #212529;
+   color: #adb5bd;
+   border-color: #6c757d;
+}
+
+body.dark-mode #expenseForm .form-control::placeholder{
+   color: #adb5bd;
+}
+
+body.dark-mode #addExpenseContainer{
+   border: 1px solid #6c757d !important;
+}
+
+body.dark-mode .filterLable{
+   color: white;
+}
+
+body.dark-mode #titleSearch{
+   background-color: #212529;
+   color: white;
+   border-color: #6c757d;
+}
+
+body.dark-mode #titleSearch::placeholder{
+   color: #adb5bd;
+}
+
+body.dark-mode #categoryFilter{
+   background-color: #212529;
+   color: #adb5bd;
+   border-color: #6c757d;
+}
+
+body.dark-mode table, body.dark-mode table th,body.dark-mode table td{
+   background-color: #343a40;
+   color: white;
+   border-color: #6c757d;
+}
+
+body.dark-mode #expensesContainer{
+   border-color: #6c757d !important;
+}
+
+body.dark-mode #editModal .modal-content{
+   background-color: #343a40;
+   color: white;
+}
+
+body.dark-mode #editModal .form-control , body.dark-mode #editModal .form-select{
+   background-color: #212529;
+   color: #adb5bd;
+   border-color: #6c757d;
+}
+
+body.dark-mode #editModal .modal-header, body.dark-mode #editModal .modal-footer{
+   border-color: #6c757d;
+}
+
+body.dark-mode header .navbar{
+   background-color: #17191c !important;
+}
+
+.editBtn{
+   color: white;
+   background-color: #2f6f4e;
+   border: 1px solid #2f6f4e;
+}
+
+.editBtn:hover, .editBtn:focus{
+   color: white !important;
+   background-color: #255a3f !important;
+   border: 1px solid #255a3f !important;
+}
